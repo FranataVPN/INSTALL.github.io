@@ -120,7 +120,7 @@ echo -e "\E[44;1;39m          ⇱ INSTALL OHP ⇲          \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e ""
 read -rp "You Name : " OWNER
-read -rp "Input Id (-1001820757727) : " ID
+read -rp "Input Id (-1001818371525) : " ID
 END
 TRX="
 <code>INFO MASKU -Transaksi</code>
