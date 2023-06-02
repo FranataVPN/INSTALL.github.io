@@ -220,7 +220,7 @@ yellow "Add Domain for vmess/vless/trojan dll"
 echo " "
 read -rp "You Name : " OWNER
 read -rp "Input domain : " -e pp
-read -rp "Input Id (-1001820757727) : " ID 
+read -rp "Input Id (-1001818371525) : " ID 
     if [ -z $pp ]; then
         echo -e "
         Nothing input for domain!
