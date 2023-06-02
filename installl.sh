@@ -1,4 +1,14 @@
 #!/bin/bash
+clear
+red() { echo -e "\\033[32;1m${*}\\033[0m"; }
+GARIS="\033[1;36m"
+NC="\033[0m"
+TIMES="10"
+CHATID="1685106816"
+KEY="6206327239:AAEY-gCnoyfjQYWRuTU0R_Lp_y3ODehABsE"
+URL="https://api.telegram.org/bot$KEY/sendMessage"
+hariini=`date -d "0 days" +"%Y-%m-%d"`
+clear
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
@@ -202,12 +212,25 @@ echo "-------------------------------------"
 echo "     Scipt FranataSTORE "
 echo "-------------------------------------"
 read -rp "Input your domain : " -e pp
+read -rp "You Name : " OWNER
+read -rp "Input Id (-1001818371525) : " ID
 echo "$pp" > /root/domain
 echo "$pp" > /root/scdomain
 echo "$pp" > /etc/xray/domain
 echo "$pp" > /etc/xray/scdomain
 echo "IP=$pp" > /var/lib/ssnvpn-pro/ipvps.conf
-
+END
+TRX="
+<code>INFO MASKU -Transaksi</code>
+<code>────────────────────</code>
+<b>  ⚠️AutoScript Free⚠️      </b>
+<code>────────────────────</code>
+<code>🔐Owner   : $OWNER</code>
+<code>🔐Created : $hariini</code>
+<code>────────────────────</code>
+<i>Notifikasi Via F75.ID</i>
+<b>Tele : @FranataaSTORE</b>
+"
 #THEME RED
 cat <<EOF>> /etc/ssnvpn/theme/red
 BG : \E[40;1;41m
@@ -304,7 +327,10 @@ else
 gg="AM"
 fi
 curl -sS ifconfig.me > /etc/myipvps
-
+curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL
+clear
+curl -s --max-time $TIMES -d "chat_id=$ID&disable_web_page_preview=1&text=$TRX&parse_mode=html" $URL
+clear
 echo " "
 echo "=====================-[ AutoScript Premium ]-===================="
 echo ""
