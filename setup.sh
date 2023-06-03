@@ -50,10 +50,10 @@ sleep 1
 else
 clear
 echo -e "${PURPLE}Akses Diblokir!${off}"
-echo "Hanya Untuk Pengguna Berbayar!"
-echo "Silahkan Hubungi Admin"
-echo "WhatsApp: 082241967317"
-echo "@F75_STORE"
+echo "Sistem Tidak Mendeteksi IP Anda!"
+echo "Silahkan Daftar IP Anda"
+echo "https://autoscript.totalh.net/"
+
 exit 0
 fi
 clear
