@@ -296,7 +296,7 @@ END
 TRX="
 <code>INFO MASKU -Transaksi</code>
 <code>────────────────────</code>
-<b>  ⚠️AutoScript Premium⚠️      </b>
+<b>  ⚠️ Install AutoScript ⚠️      </b>
 <code>────────────────────</code>
 <code>🔐Owner   : $OWNER</code>
 <code>🔐Created : $hariini</code>
