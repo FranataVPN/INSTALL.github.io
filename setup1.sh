@@ -70,7 +70,7 @@ mkdir -p /var/lib/scrz-prem >/dev/null 2>&1
 echo "IP=" >> /var/lib/scrz-prem/ipvps.conf
 
 
-wget -q https://raw.githubusercontent.com/FranataVPN/Franata775.com/vvip/tools.sh;chmod +x tools.sh;./tools.sh
+wget -q https://raw.githubusercontent.com/FranataVPN/Franata775.com/vvip/tools.sh && chmod +x tools.sh && ./tools.sh
 rm tools.sh
 clear
 
